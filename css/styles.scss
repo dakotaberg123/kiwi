@@ -1,52 +1,88 @@
 @import "_normalize";
-@import "_grid";
 @import "_variables";
 
 
 body {
-	background: url("../img/bg.png");
+	background: url("../img/bg-new.png");
 	color: $primary-color;
 	font-family: $body-font;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+svg {
+	width: 35%;
+	height: 100%;
 }
 
 blockquote {
 	@include blockquote();
+	width: 100%;
+	float: left;
 }
 
 nav {
 	@include nav();
+	float: left;
 }
 
 #home a:hover {
-	background: url("../img/icons/home.png") no-repeat left center;
+	background: url('../img/icons/spritemap.png') no-repeat -2px -9px;
+	width: 28px;
+	height: 28px;
 }
 
 #super a:hover {
-	background: url("../img/icons/super.png") no-repeat left center;
+	background: url('../img/icons/spritemap.png') no-repeat -1px -58px;
+	width: 30px;
+	height: 30px;
 }
 
 #html5 a:hover {
-	background: url("../img/icons/html5.png") no-repeat left center;
+	background: url('../img/icons/spritemap.png') no-repeat -3px -111px;
+	width: 26px;
+	height: 24px;
 }
 
 h3 {
 	font-family: $name-font;
+	float: left;
+}
+
+section {
+	width: 20%;
+	margin: 0 2.5%;
+	float: left; 
+
+	p a {
+		float: left;
+	}
 }
 
 article img {
+	width: 100%;
 	border: 10px solid $primary-color;
+	float: left;
 }
 
 img {
 	+ p {
 		line-height: 24px;
 		text-indent: 32px;
+		float: left;
 	}
 }
 
 footer {
+	float: left;
+
 	p {
 		font: 10px/16px $footer-font;
+		float: left;
+		width: 47%;
+		margin: 5% 1%;
+		padding: 0;
 	}
 }
+
 
